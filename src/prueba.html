@@ -1,0 +1,49 @@
+<script type="text/javascript">
+	
+
+	   var persona = [];
+        /*Agregar personas*/
+      
+        persona.push({
+            identificacion: 123,
+            nombres: 'Fernando',
+            edad: 14,
+            email: 'fernando@gmail.com'
+        });
+
+           persona.push({
+            identificacion: 124,
+            nombres: 'Maria',
+            edad: 15,
+            email: 'maria@gmail.com'
+        });
+
+          // la aplice(posicion, cantidad de datos a elimar, Datos a cambias)
+
+
+           /*BUSCAR DATOS */
+          // const eliminado = persona.splice(1,1);
+           //console.log('Eliminado: ', eliminado);
+            
+
+           /*BUSCAR DATOS */
+           const actualizar = persona.splice(1,1,{
+            identificacion: 124,
+            nombres: 'Fernando Argel',
+            edad: 15,
+            email: 'fernandoMAria@gmail.com'
+           });
+           console.log('Actualizar: ', actualizar);
+
+      //  console.log(persona)
+//const buscar = persona.find(element => persona = 1);
+//console.log(buscar.identificacion);
+const buscar = persona.find(persona => persona.identificacion == 124);
+console.log(buscar.identificacion);
+
+ for (i = 0; i < persona.length; i++) {
+             console.log("Pos: " + (i+1) + " Valor: " + persona[i].identificacion)
+         }
+
+
+</script>
